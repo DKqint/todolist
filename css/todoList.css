@@ -1,0 +1,124 @@
+body,div,dl,dt,dd,ul,li,a,p,h1,h2,h3,h4,h5,h6,input,form,textarea{
+    margin:0px;
+    padding:0px;
+}
+ol,ul li{
+    list-style:none;
+}
+del {
+    text-decoration: none;
+}
+
+header{
+    height: 80px;
+    width: 1200px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-bottom: 1px solid #666666;
+}
+header p{
+    position: absolute;
+
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+.tab{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.tab li{
+    width: 200px;
+    font-size: 20px;
+    height: 20px;
+    padding: 10px;
+}
+.hot{
+    color: #FFFFFF;
+    transition: all 1s;
+}
+li.hot:nth-child(1)~ .top1{
+    transform: translate(0,0);
+}
+li.hot:nth-child(2)~ .top1{
+    transform: translate(100%,0);
+}
+li.hot:nth-child(3)~ .top1{
+    transform: translate(200%,0);
+}
+.top1{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #34aadc;
+    transition: all ease-in 0.5s;
+}
+.content{
+    width: 600px;
+    flex-direction: column;
+    height: auto;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.content li{
+    padding: 10px;
+    box-shadow: 0px 3px 43px 0px rgba(57, 255, 214, 0.13);
+    border: 1px solid gray;
+}
+.content p{
+    display: inline-block;
+}
+.content time{
+    float: right;
+}
+.content del{
+    margin-left: 20px;
+    float: right;
+    text-decoration: none;
+}
+.content del:hover{
+    cursor: pointer;
+}
+
+form{
+    position: relative;
+    top: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.input_text{
+    width: 500px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    outline: none;
+}
+.submit_button{
+    height: 40px;
+    width: 80px;
+    border: 1px solid #666666;
+    outline: none;
+    color: blue;
+    background: green;
+}
